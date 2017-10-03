@@ -9,7 +9,7 @@ def root():
 @my_app.route('/greet', methods = ['POST'])
 def greet(): 
     print request.form['username']
-    return render_template("greeting.html", input1 = request.form['username'])
+    return render_template("greeting.html", input1 = request.form['username'], input2 = request.method)
  
 
 if __name__ == '__main__':
