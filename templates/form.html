@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Form</title>
+  </head>
+
+  <body>
+    {% block content1 %}
+    <form action='/greet' method="post">
+      Username:<br>
+      <input type="text" name="username"><br>
+      <input type="submit" value="Submit" name="enter">
+    </form>
+    {% endblock %}
+  </body>
+</html>
